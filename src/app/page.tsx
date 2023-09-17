@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Link from 'next/dist/client/link';
 
 export default function Home({ formattedDate }: { formattedDate: string }) {
   return (
@@ -8,9 +7,7 @@ export default function Home({ formattedDate }: { formattedDate: string }) {
       <h1>Static page</h1>
       <p>This page is static. It was built on {formattedDate}.</p>
       <p>
-      <Link href="./ssr">
-          <a>About Page</a>
-        </Link>
+        <a href="../pages/SSR">View a server-side rendered page.</a>
       </p>
     </>
   );
